@@ -1,0 +1,139 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.app {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url("../img/tweed.png") repeat;
+}
+
+.main {
+  width: 100%;
+}
+
+.main-app {
+  width: 70%;
+}
+
+.user-list {
+  width: 30%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px 20px 0 0;
+
+  h3 {
+    margin-top: 0;
+  }
+
+  .list-group {
+    margin-bottom: 0;
+  }
+
+  .glyphicon.glyphicon-user {
+    color: @danger;
+
+    &.online {
+      color: @success;
+    }
+  }
+}
+
+.alert-box {
+  position: absolute;
+  bottom: 0;
+  left: 1%;
+  z-index: 9999;
+}
+
+.login {
+  margin-top: 15px;
+}
+
+.under-my-control {
+
+}
+.under-their-control {
+
+}
+.progress {
+  margin: 10%;
+}
+#ex1Slider .slider-selection {
+	background: #BABABA;
+}
+
+// chess styles
+
+.playingBlock{
+  width: 100px;
+  height: 100px;
+  /*width: 10%;*/
+  /*height: 10%;*/
+  position: absolute;
+  text-align: center;
+  border: solid 1px black;
+  vertical-align: middle;
+}
+.takenPiece{
+  width: 5%;
+  height: 5%;
+}
+.takenPieces{
+  height: 50px;
+  position: relative;
+  text-align: center;
+  border: solid 1px black;
+  vertical-align: middle;
+}
+.moveRegistery{
+  font-size: 12px;
+  width: 400px;
+  position: relative;
+  text-align: center;
+  border: solid 1px black;
+  vertical-align: middle;
+}
+.blackBlock{
+  background-color: black;
+}
+.whiteBlock{
+  background-color: white;
+}
+.highlighted{
+  /*background-color: green;*/
+  border: solid 10px green;
+}
+.attackBlock{
+  /*background-color: red;*/
+  border: solid 10px red;
+}
+.moveBlock{
+  /*background-color: blue;*/
+  border: solid 10px blue;
+}
+.checkBlock{
+  border: solid 10px yellow;
+}
+.checkBlock{
+  border: solid 10px yellow;
+}
+.castleBlock{
+  border: solid 10px purple;
+}
+.gamePiece{
+  width: 70%;
+  height: 70%;
+  /*background-color: red;*/
+  margin: 15%;
+  position: relative;
+  cursor: pointer;
+}
