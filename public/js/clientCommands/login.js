@@ -49,8 +49,8 @@ function (namespace, Cookies, handlebars) {
         // set cookie so user can refresh browser
         Cookies.set('appUser', {_id: user._id}, {expires: inFifteenMinutes});
         // load an app
-        require(['chess'], function () {
-          globals.chess.render();
+        require(['nero'], function () {
+          globals.nero.render();
         });
         // load user list
         require(['user-list'], function () {
