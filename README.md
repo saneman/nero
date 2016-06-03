@@ -8,5 +8,5 @@ run app:
 
 run grunt:
 
- clear && node_modules/grunt/bin/grunt watch
+  . ~/.nvm/nvm.sh && nvm use stable && clear && node_modules/grunt/bin/grunt watch
 # nero

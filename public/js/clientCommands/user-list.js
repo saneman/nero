@@ -30,7 +30,10 @@ function (namespace, Cookies, handlebars) {
         template = handlebars.compile(gTemplates['user-list']);
 
       gUsers = users;
-      gUsers[gUser._id].isUser = true;
+      if (gUsers[gUser._id]) {
+        gUsers[gUser._id].isUser = true;
+      }
+
 
       if (gUsers[gUser._id].loggedIn) {
         $('.user-list').html(template({

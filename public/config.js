@@ -9,7 +9,9 @@ require.config({
     'io' : '../libs/socket.io',
     'jscookie' : '../libs/js.cookie',
     'handlebars' : '../libs/handlebars',
-    'bootstrapslider' : '../libs/bootstrap-slider'
+    'bootstrapslider' : '../libs/bootstrap-slider',
+    'fastActive' : '../libs/FastActive.min',
+    'mainLoop' : '../libs/mainLoop'
   },
   shim : {
     'config' : {

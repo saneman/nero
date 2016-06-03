@@ -17,10 +17,6 @@ function (namespace, Cookies, handlebars) {
 
   console.log(naai);
 
-  naai = 3;
-
-  console.log(naai);
-
   var
     globals = namespace,
     gTemplates = globals.gTemplates,

@@ -18,6 +18,10 @@ define([
         gAlertTime: 4000,
         gUsers: {},
         gUser: {},
+        getRandomNumberBetween: function (aFrom, aTo) {
+          // get random number in range from: aFrom to: aTo
+          return Math.floor(Math.random() * aTo) + aFrom;
+        },
         updateProgressBar: function (aGTCnt, aTCnt, aFile) {
           var percent = (aGTCnt / aTCnt) * 100;
           $('.progress-bar').attr('aria-valuenow', percent);
