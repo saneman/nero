@@ -131,10 +131,32 @@ div {
   width: 70%;
 }
 .bot-controls {
-  background-color: lightblue;
-  height: 10%;
+  position: absolute;
+  top: 0;
+  bottom: 5%;
+  background-color: blue;
+  width: 100%;
 }
 .play-ground {
+  position: absolute;
+  top: 5%;
+  bottom: 0;
   background-color: brown;
-  height: 90%;
+  width: 100%;
+}
+.gi-2x {
+  font-size: 2em;
+}
+.gi-3x {
+  font-size: 3em;
+}
+.gi-4x {
+  font-size: 4em;
+}
+.gi-5x {
+  font-size: 5em;
+}
+.gift {
+  position: absolute;
+  background-color: yellow;
 }

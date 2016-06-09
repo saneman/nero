@@ -16,7 +16,7 @@ var simulationTimestep = 1000 / 60,
     lastFrameTimeMs = 0,
 
     // An exponential moving average of the frames per second.
-    fps = 90,
+    fps = 61,
 
     // The timestamp (in milliseconds) of the last time the `fps` moving
     // average was updated.
@@ -528,6 +528,7 @@ root.MainLoop = {
      * See also `MainLoop.start()` and `MainLoop.isRunning()`.
      */
     stop: function() {
+        // console.log('stop now');
         running = false;
         started = false;
         cancelAnimationFrame(rafHandle);
