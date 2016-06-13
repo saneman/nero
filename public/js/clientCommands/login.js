@@ -14,7 +14,8 @@ function (namespace, Cookies, handlebars) {
     gTemplates = globals.gTemplates,
     template = handlebars.compile(gTemplates.login)(),
     socket = globals.socket,
-    idiotCnt = 0;
+    idiotCnt = 0,
+    app = 'nero';
   // add success and failure to the global command loist for callbacks
   globals.login = {
     // main action of the module
@@ -49,8 +50,8 @@ function (namespace, Cookies, handlebars) {
         // set cookie so user can refresh browser
         Cookies.set('appUser', {_id: user._id}, {expires: inFifteenMinutes});
         // load an app
-        require(['nero'], function () {
-          globals.nero.render();
+        require([app], function () {
+          globals[app].render();
         });
         // load user list
         require(['user-list'], function () {

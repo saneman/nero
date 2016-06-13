@@ -1050,6 +1050,7 @@ function (namespace, Cookies, handlebars) {
       console.log('chess: failure');
     },
     render: function () {
+      $('.progress').hide();
       // console.log('chess: render');
       buildBoard();
     }

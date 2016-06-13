@@ -8,9 +8,10 @@ var
   gUsers = {},
   allClients = [],
   dbUrl = 'mongodb://localhost:27017/test',
-  clearUserDB = true;
+  clearUserDB = false;
 // connect to mongo database and create db object
 MongoClient.connect(dbUrl, function (err, db) {
+  // console.log('err', err);
   // shout about errors
   assert.equal(null, err);
   // clear user db
